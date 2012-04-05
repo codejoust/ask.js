@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Ask.js by codejoust</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Ask.js</h1>
+        <h2></h2>
+
+        <section id="downloads">
+          <a href="https://github.com/codejoust/ask.js/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/codejoust/ask.js/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/codejoust/ask.js" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>Ask.js - the easiest way to ask someone something.</h1>
+
+<h2>Usage:</h2>
+
+<pre><code>var ask = require('ask');
+var ask_req = ask.to('dinner').at('Starbucks').near('Chattanooga, TN').around('Friday Night');
+ask_req.on('email_back', function(req, res){ res.send('Thanks!'); });
+ask_req.send_by_email('participat@therealmeaningof.com');
+ask_req.participants.push(new ask.user('asker@therealmeaningof.com'))
+</code></pre>
+
+<h2>Why:</h2>
+
+<p>Because planning real face-to-face stuff can be so hard.</p>
+
+<h2>Todo:</h2>
+
+<p>Actually write code, solidify API and usages.</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
